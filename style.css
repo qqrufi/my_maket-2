@@ -1,0 +1,292 @@
+.header {
+    font-family: 'PT+Sans', sans-serif; /* Setting font family */
+    background-color: lightgray; /* Setting background color */
+    height: 200px; /* Adding fixed height */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Spacing items evenly */
+    align-items: center; /* Vertical alignment of items */
+    padding: 10px 20px; /* Padding inside .header */
+}
+
+.logo-title {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Centering image and text vertically */
+    margin-left: 150px; /* Adding left margin */
+}
+
+.logo-title img {
+    width: 60px; /* Setting width for the logo image */
+    height: 60px; /* Setting height for the logo image */
+    margin-right: 10px; /* Adding right margin */
+}
+
+.title-subtitle h1 {
+    font-size: 20px; /* Setting font size for the main title */
+    color: grey; /* Setting text color */
+    margin: 0; /* Removing margins */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 800; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+}
+
+.title-subtitle h2 {
+    font-size: 20px; /* Setting font size for the subtitle */
+    margin: 0; /* Removing margins */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 800; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+    color: grey; /* Setting text color */
+}
+
+.title-subtitle p {
+    font-size: 14px; /* Setting font size for the description */
+    margin: 5px 0 0 0; /* Setting margins */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 400; /* Setting font weight */
+    font-style: normal;  /* Setting font style */
+}
+
+.empty-block {
+    width: 300px; /* Setting width for an empty block */
+}
+
+.phone-number {
+    font-size: 40px; /* Setting font size for phone numbers */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    text-decoration: none; /* Removing underline */
+    font-weight: 50px; /* Setting font weight */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Arranging numbers vertically */
+    color: whitesmoke; /* Setting text color */
+    line-height: 1.2; /* Adding line height */
+    margin-right:200px; /* Adding right margin */
+    text-align: right; /* Aligning text to the right */
+    margin-left: auto; /* Setting auto margin to push it to the right */
+    margin-top: 15px; /* Adding top margin */
+}
+
+.phone-number a {
+    color:#767676; /* Setting text color */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    text-decoration: none; /* Removing underline */
+    font-weight: 50px; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+}
+
+.menu {
+    background-color: #333; /* Setting background color */
+}
+
+.nav-links {
+    display: flex; /* Flexbox layout */
+    flex-direction: row; /* Arranging items horizontally */
+    justify-content: center; /* Centering items horizontally */
+    list-style: none; /* Removing default list style */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    flex: 1; /* Allowing flexbox to grow */
+    position: relative;   /* Positioning relative */
+}
+
+.nav-links li {
+    margin: 20px; /* Adding margin around each item */
+    display: inline-block;  /* Displaying items inline */
+}
+
+.nav-links li:not(:last-child)::after {
+    content: "|"; /* Adding separator */
+    position: absolute; /* Positioning absolute */
+    right: -5px; /* Adjusting position */
+    color: #fff; /* Setting color for the separator */
+}
+
+.nav-links a {
+    display: block; /* Displaying as block */
+    color: #fff; /* Setting text color */
+    text-decoration: none; /* Removing underline */
+    padding: 10px; /* Adding padding */
+    white-space: nowrap; /* Preventing wrapping */
+    font-size: 20px; /* Setting font size */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    text-decoration: none; /* Removing underline */
+    font-weight: 50px; /* Setting font weight */
+}
+
+.image-container {
+    margin-top: 0px; /* Adding top margin */
+    width: 100%; /* Setting width */
+    text-align: center; /* Centering text */
+}
+
+.image-container img {
+    max-width: 100%; /* Setting max width */
+    height: auto; /* Setting height to auto */
+}
+
+.container {
+    width: 100%; /* Setting width */
+    max-width: 1000px; /* Setting max width */
+    margin: 0 auto; /* Centering container */
+    padding: 0 10px; /* Adding padding */
+    color: #787878; /* Setting text color */
+    display: flex; /* Flexbox layout */
+}
+
+.sidebar-container {
+    flex: 300px; /* Setting width */
+    background-color: #767676; /* Setting background color */
+    padding: 20px; /* Adding padding */
+    width: 30%; /* Setting width */
+}
+
+.sidebar-title {
+    font-size: 2.4rem; /* Setting font size */
+    margin-top: 0; /* Removing top margin */
+    margin-right: 33px; /* Adding right margin */
+}
+
+.sidebar {
+    color: white; /* Setting text color */
+}
+
+.sidebar a {
+    color: #fff; /* Setting text color */
+    text-decoration: none; /* Removing underline */
+    font-size: 14px; /* Setting font size */
+    padding-top: 10px; /* Adding top padding */
+    display: block; /* Displaying as block */
+    padding-left: 21px; /* Adding left padding */
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Removing top margin */
+    color: white; /* Setting text color */
+    margin-top: 10px; /* Adding top margin */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 700; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+}
+
+.sidebar ul {
+    list-style: none; /* Removing default list style */
+    padding: 0; /* Removing default padding */
+}
+
+.sidebar ul li {
+    margin-bottom: 20px; /* Adding bottom margin */
+    position: relative; /* Positioning relative */
+}
+
+.sidebar ul li::before {
+    content: attr(data-date); /* Adding date content */
+    position: absolute; /* Positioning absolute */
+    left: 20px; /* Setting left position */
+    top: -2px; /* Setting top position */
+    font-size: 12px; /* Setting font size */
+}
+.sidebar ul li span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px; /* Відступ для тексту */
+    margin-top: 10px; /* Відступ над кожним рядком списку */
+    
+}   
+.sidebar-container h2 {
+    color: white; /* Setting text color */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 400; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+}
+
+.text-block {
+    flex: 600px; /* Setting width */
+    padding: 42px; /* Adding padding */
+    margin-left: 20px; /* Adding left margin */
+    margin-top: -57px; /* Adding negative top margin */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 400; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+    font-size: 14x; /* Setting font size */
+}
+
+.text-block h2 {
+    font-size: 40px; /* Setting font size */
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 400; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+    font-weight: 300; /* Setting font weight */
+}
+
+.footer {
+    width: 100%; /* Setting width */
+    height: 175px; /* Setting height */
+    background-color: #787878; /* Setting background color */
+    color: #fff; /* Setting text color */
+    display:flex; /* Flexbox layout */
+    justify-content: space-around; /* Spacing items evenly */
+    align-items: center; /* Centering items vertically */
+    margin-top: 180px; /* Adding top margin */
+} 
+
+.footer-block-paragraphs,
+.footer-list div,
+.footer-info {
+    font-family: "PT Sans", sans-serif; /* Setting font family */
+    font-weight: 400; /* Setting font weight */
+    font-style: normal; /* Setting font style */
+}
+
+.footer-info,
+.footer-list,
+.footer-block-image {
+    flex: 1; /* Allowing items to grow */
+}
+
+.footer-info {
+    text-align: center; /* Centering text */
+    flex: 1; /* Allowing flex */
+    text-align: left; /* Aligning text to the left */
+    margin-left: 300px; /* Adding left margin */
+    margin-top: -70px; /* Adding top margin */
+}
+
+.footer-info a {
+    color: #fff; /* Setting text color */
+}
+
+.footer-list div {
+    text-align: center; /* Centering text */
+    text-decoration: underline; /* Adding underline */
+    text-align: left; /* Aligning text to the left */
+    margin-bottom: 8px; /* Adding bottom margin */
+}
+
+.footer-list a {
+    color: white; /* Setting text color */
+    text-decoration: none; /* Removing underline */
+}   
+
+.footer-block-image {
+    flex: 1; /* Allowing flex */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centering items horizontally */
+    align-items: center; /* Centering items vertically */
+    margin-top: -90px; /* Adding top margin */
+}
+
+.footer-block-image img {
+    max-width: 100%; /* Setting max width */
+    max-height: 100%; /* Setting max height */
+    margin-right: 20px; /* Adding right margin */
+}
+
+.footer-block-paragraphs {
+    flex: 2; /* Allowing flex */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Arranging items vertically */
+    text-decoration: underline; /* Adding underline */
+}
+
+.footer-block-paragraphs p {
+    margin-bottom: 5px; /* Adding bottom margin */
+}
